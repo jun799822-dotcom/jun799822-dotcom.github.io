@@ -128,7 +128,7 @@ var photos=[
 {t:"Spires at dusk",d:"",c:"Places",s:"c4 L",src:"01-spires-at-dusk.jpg"},
 {t:"Graduation gowns",d:"",c:"People",s:"c2 P",src:"02-graduation-gowns.jpg"},
 {t:"Watching the jellyfish",d:"",c:"People",s:"c2 P",src:"03-watching-the-jellyfish.jpg"},
-{t:"Blossoms after dark",d:"",c:"Places",s:"c4 L",src:"04-blossoms-after-dark.JPG"},
+{t:"Blossoms after dark",d:"",c:"Places",s:"c4 L",src:"04-blossoms-before-dark.JPG"},
 {t:"Nutcracker on the shelf",d:"",c:"Details",s:"c4 L",src:"05-nutcracker-on-the-shelf.jpg"},
 {t:"Mug and mushroom lamp",d:"",c:"Details",s:"c2 P",src:"06-mug-and-mushroom-lamp.jpg"},
 {t:"Lamplight by the dartboard",d:"",c:"Details",s:"c2 P",src:"07-lamplight-by-the-dartboard.jpg"},
@@ -136,8 +136,9 @@ var photos=[
 {t:"Rooftops in the haze",d:"",c:"Places",s:"c3 L",src:"09-rooftops-in-the-haze.JPG"},
 {t:"Torii and vending machines",d:"",c:"Places",s:"c3 L",src:"10-torii-and-vending-machines.JPG"},
 {t:"Crossroads",d:"",c:"Places",s:"c6 L",src:"11-crossroads.JPG"}
-];
-var grid=document.getElementById("grid"),lb=document.getElementById("lb"),st=document.getElementById("st"),cap=document.getElementById("cap"),cur=0,vis=[];
+    ];
+
+    var grid=document.getElementById("grid"),lb=document.getElementById("lb"),st=document.getElementById("st"),cap=document.getElementById("cap"),cur=0,vis=[];
 var hero=document.getElementById("hero");hero.src=photos[7].src;hero.alt=photos[7].t;document.getElementById("hcap").textContent=photos[7].t;
 document.getElementById("pt").style.backgroundImage="url('"+photos[3].src+"')";
 function el(p){var m=document.createElement("img");m.src=p.src;m.alt=p.t;return m}
