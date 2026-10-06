@@ -7,20 +7,9 @@
 <title>Junseok Kim | Waseda SSS</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-    --bg: #000;
-    --soft: #111;
-    --ink: #fff;
-    --mute: #aaa;
-    --line: #333;
-    box-sizing: border-box;
-    padding-top: env(safe-area-inset-top, 0px);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-
-html {
-    color-scheme: dark;
-}
+:root{--bg:#f5f2ec;--soft:#ebe7df;--ink:#1b1a18;--mute:#7a766e;--line:#d9d4ca;--serif:"Cormorant Garamond",Georgia,serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11100f;--soft:#1a1917;--ink:#efebe3;--mute:#9a958b;--line:#2b2926}}
+:root[data-theme="dark"]{--bg:#11100f;--soft:#1a1917;--ink:#efebe3;--mute:#9a958b;--line:#2b2926}
 html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:inherit}
 body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.7 "Jost",system-ui,sans-serif}
